@@ -34,3 +34,44 @@ li {
 a {
   text-decoration: none;
 }
+
+/* Media query for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .left_content {
+    width: 100%;
+  }
+
+  .right_content {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .right_content > div {
+    margin: 10px;
+  }
+
+  .icons ul {
+    flex-direction: row;
+  }
+}
+
+/* Media query for screens smaller than 480px */
+@media screen and (max-width: 480px) {
+  h2 {
+    font-size: 16px;
+  }
+
+  ul {
+    margin-top: 5px;
+  }
+
+  li {
+    margin-bottom: 5px;
+  }
+}
